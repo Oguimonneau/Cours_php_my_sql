@@ -12,8 +12,8 @@ catch (Exception $e)
 
 $req = $bdd->prepare('INSERT INTO messages_chat(pseudo, message) VALUES(:pseudo, :message)');
 $req->execute(array(
-	'pseudo' => $_POST['pseudo'],
-	'message' => $_POST['message'],
+	'pseudo' => htmlspecialchars($_POST['pseudo']),
+	'message' => htmlspecialchars($_POST['message']),
 
 	));
 // Retour sur la page principale

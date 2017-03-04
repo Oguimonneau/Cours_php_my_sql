@@ -31,8 +31,8 @@ catch (Exception $e)
   	<center>
   			<form action="ajoute_message.php" method="post">
 			<p>
-			    Votre pseudo : <input type="text" name="pseudo" /><br/>
-			    Votre message : <input type="text" name="message" /><br/>
+			    Votre pseudo : <input type="text" name="pseudo" required="" /><br/>
+			    Votre message : <input type="text" name="message" required="" /><br/>
 			    <input type="submit" value="Envoyer" />
 			</p>
 		</form>
