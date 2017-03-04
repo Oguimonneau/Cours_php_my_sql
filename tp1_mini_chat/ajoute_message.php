@@ -16,5 +16,6 @@ $req->execute(array(
 	'message' => $_POST['message'],
 
 	));
-echo 'Le message a bien été ajouté !';
+// Retour sur la page principale
+header('Location: index.php');
 ?>
