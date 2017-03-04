@@ -25,12 +25,11 @@ catch (Exception $e)
     <header>
        
     </header>
-    
    
     <!-- Le formulaire -->
     
   	<center>
-  			<form action="cible.php" method="post">
+  			<form action="ajoute_message.php" method="post">
 			<p>
 			    Votre pseudo : <input type="text" name="pseudo" /><br/>
 			    Votre message : <input type="text" name="message" /><br/>
@@ -51,6 +50,7 @@ catch (Exception $e)
     }
     $reponse->closeCursor(); // Termine le traitement de la requête
     ?>
+
     <!-- Le pied de page -->
 
     <footer id="pied_de_page">
