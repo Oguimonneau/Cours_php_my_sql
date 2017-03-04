@@ -2,7 +2,8 @@
 //Connection à la databe
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=minichat;charset=utf8', 'root', 'root');
+	$bdd = new PDO('mysql:host=localhost;dbname=minichat;charset=utf8', 'root', 'root',
+    array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 }
 catch (Exception $e)
 {
@@ -38,8 +39,18 @@ catch (Exception $e)
 		</form>
   	</center>
 		    
-    <!-- La liste des massages -->
+    <!-- La liste des messages -->
+<?php
+$reponse = $bdd->query('SELECT * FROM messages_chat');
+   // On affiche chaque entrée une à une
+while ($donnees = $reponse->fetch())
+{
+    echo $donnees['pseudo']. ' : '.$donnees['message'];
+}
+$reponse->closeCursor(); // Termine le traitement de la requête
 
+
+?>
     <!-- Le pied de page -->
 
     <footer id="pied_de_page">
