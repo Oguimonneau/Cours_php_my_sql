@@ -15,12 +15,12 @@ catch (Exception $e)
 <html>
     <head>
         <meta charset="utf-8" />
-        <!-- Utilise LESS -->
-        <link rel="stylesheet/less" type="text/css" href="css/styles.less">
-        <script src="less.js" type="text/javascript"></script> 
-        <!-- Utilise CSS 
-        <link rel="stylesheet" type="text/css" href="css/styles.css">-->
-
+        <!-- Utilise Bootstrap -->
+        <!--  Production <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <script src="bootstrap/js/jquery.js"></script>
+        <!--  Production <script src="bootstrap/js/bootstrap.min.js"></script>-->
+        <script src="bootstrap/js/bootstrap.js"></script>
 
         <title>Mon premier mini-Chat</title>
     </head>
