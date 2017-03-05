@@ -15,6 +15,13 @@ catch (Exception $e)
 <html>
     <head>
         <meta charset="utf-8" />
+        <!-- Utilise LESS -->
+        <link rel="stylesheet/less" type="text/css" href="css/styles.less">
+        <script src="less.js" type="text/javascript"></script> 
+        <!-- Utilise CSS 
+        <link rel="stylesheet" type="text/css" href="css/styles.css">-->
+
+
         <title>Mon premier mini-Chat</title>
     </head>
  
@@ -23,7 +30,7 @@ catch (Exception $e)
     <!-- L'en-tête -->
     
     <header>
-       
+       essai
     </header>
    
     <!-- Le formulaire -->
