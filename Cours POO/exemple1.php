@@ -23,3 +23,10 @@ $perso2->gagnerExperience(); // $perso2 gagne de l'expérience
 echo 'Le personnage 1 a ', $perso1->force(), ' de force, contrairement au personnage 2 qui a ', $perso2->force(), ' de force.<br />';
 echo 'Le personnage 1 a ', $perso1->experience(), ' d\'expérience, contrairement au personnage 2 qui a ', $perso2->experience(), ' d\'expérience.<br />';
 echo 'Le personnage 1 a ', $perso1->degats(), ' de dégâts, contrairement au personnage 2 qui a ', $perso2->degats(), ' de dégâts.<br />';
+
+//Exercice compteur
+$test1 = new Compteur;
+$test2 = new Compteur;
+$test3 = new Compteur;
+
+echo '<br />Valeur du compteur : ' . Compteur::getCompteur();
